@@ -1,0 +1,25 @@
+/* Shared sizing and alignment for downloaded icon assets. */
+.game-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  flex: 0 0 auto;
+  object-fit: contain;
+  vertical-align: -0.3em;
+}
+
+.game-icon--small {
+  width: 1em;
+  height: 1em;
+}
+
+.game-icon--large {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.birthday-title-icon {
+  width: 1.7em;
+  height: 1.7em;
+  vertical-align: -0.45em;
+}

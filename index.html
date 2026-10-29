@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#110d20" />
+  <title>
+    Birthday Quest | MAPRANG
+  </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/icons/icons.css" />
+</head>
+
+<body>
+  <div class="burst-layer" id="burstLayer">
+  </div>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="กลับหน้าแรก">
+        <div class="brand-mark">
+          ✦
+        </div>
+        <div>
+          <div class="brand-name">
+            BIRTHDAY QUEST
+          </div>
+          <div class="brand-sub">
+            22TH SPECIAL EVENT
+          </div>
+        </div>
+      </a>
+      <div class="top-right">
+        <div class="live-pill">
+          <i>
+          </i>
+          ONLINE
+        </div>
+        <div class="profile-orb">
+          •ᴗ•✌🏻︎☆
+        </div>
+      </div>
+    </header>
+    <section class="hero" id="home">
+      <div class="eyebrow">
+        1030 &nbsp; / &nbsp; SPECIAL EVENT
+      </div>
+      <h1>
+        NICHAKORN,
+        <span id="heroTitleLine">
+          IT'S YOUR LIFE.
+        </span>
+      </h1>
+      <p>
+        <span id="heroGreeting">Even on an ordinary day, you're still special.</span>
+        <br>
+        <span id="heroSubline">Just remember that.</span>
+      </p>
+    </section>
+    <nav class="nav" aria-label="Birthday experience">
+      <button class="active" data-view="countdown">
+        <span class="num">
+          01
+        </span>
+        Countdown
+      </button>
+      <button data-view="chat">
+        <span class="num">
+          02
+        </span>
+        Guild Chat
+      </button>
+      <button data-view="cake">
+        <span class="num">
+          03
+        </span>
+        Cake Quest
+      </button>
+      <button data-view="gift">
+        <span class="num">
+          04
+        </span>
+        Rewards
+      </button>
+    </nav>
+    <section id="countdown" class="view active">
+      <div class="card countdown-card">
+        <div class="count-copy">
+          <div class="eyebrow">
+            QUEST &nbsp; / &nbsp; COUNTDOWN
+          </div>
+          <h2>
+            Countdown to Level Up!
+          </h2>
+          <div class="date-row">
+            Birthday date
+            <input id="birthday" type="datetime-local" aria-label="Set birthday date and time">
+          </div>
+        </div>
+        <div class="timer" aria-live="polite">
+          <div class="time-box">
+            <b id="days">
+              000
+            </b>
+            <span>
+              days
+            </span>
+          </div>
+          <div class="time-box">
+            <b id="hours">
+              00
+            </b>
+            <span>
+              hours
+            </span>
+          </div>
+          <div class="time-box">
+            <b id="minutes">
+              00
+            </b>
+            <span>
+              minutes
+            </span>
+          </div>
+          <div class="time-box">
+            <b id="seconds">
+              00
+            </b>
+            <span>
+              seconds
+            </span>
+          </div>
+        </div>
+        <div class="card-foot">
+          <div class="hint">
+            <b>
+              ▶
+            </b>
+            <span id="questStatus">QUEST STATUS: WAITING</span>
+          </div>
+          <button class="button secondary unlock-only" data-go="chat">
+            View Guild messages
+            <span>
+              →
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="locked-note" id="lockedNotice">
+        <span class="locked-note-icon">🔒</span>
+        <div>
+          <strong>Special features are locked</strong>
+          <span>Guild messages and the cake quest unlock on your birthday. Complete the cake quest to claim your
+            reward.</span>
+        </div>
+      </div>
+      <div class="under-grid">
+        <div class="mini-card">
+          <div class="mini-icon">
+            🎮
+          </div>
+          <div>
+            <b id="playerLabel">
+              MAPRANG: Brightness Girl
+            </b>
+            <span>
+              You're the MVP of this game.
+            </span>
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-icon">
+            🌙
+          </div>
+          <div>
+            <b>
+              Quest : Wish & reward
+            </b>
+            <span>
+              Your bonus reward is waiting at the final stage.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="chat" class="view">
+      <div class="card chat-layout">
+        <aside class="server">
+          <div class="server-title">
+            ✦ birthday guild
+          </div>
+          <div class="channel-label">
+            TEXT CHANNELS
+          </div>
+          <div class="channel selected">
+            <span>
+              #
+            </span>
+            birthday-wishes
+          </div>
+          <div class="channel">
+            <span>
+              #
+            </span>
+            game-night
+          </div>
+          <div class="channel">
+            <span>
+              #
+            </span>
+            memories
+          </div>
+          <div class="channel-label">
+            VOICE CHANNELS
+          </div>
+          <div class="channel">
+            <span>
+              ◖
+            </span>
+            party room
+          </div>
+          <div class="channel-label">
+            ONLINE — 6
+          </div>
+          <div class="members">
+            <div class="avatar-stack">
+              <div class="avatar">
+                🌷
+              </div>
+              <div class="avatar">
+                🐻
+              </div>
+              <div class="avatar">
+                🐒
+              </div>
+              <div class="avatar">
+                🐶
+              </div>
+              <div class="avatar">
+                🐱
+              </div>
+              <div class="avatar">
+                🦊
+              </div>
+            </div>
+            <small>
+              เพื่อนของเธอ
+            </small>
+          </div>
+        </aside>
+        <div class="chat-main">
+          <div class="chat-head">
+            <b>
+              <span style="color:#95889e">
+                #
+              </span>
+              birthday-wishes
+            </b>
+            <span>
+              ✦ &nbsp; a cozy little corner
+            </span>
+          </div>
+          <div class="chat-body">
+            <div class="chat-welcome">
+              <div class="hash">
+                #
+              </div>
+              <b>
+                ยินดีต้อนรับสู่ #birthday-wishes
+              </b>
+              <p>
+                กราบขอขมา แต่ตัวข้าพเจ้านั้นมิอาจสามารถไปร่วมรบเคียงบ่าเคียงไหล่กับพวกท่านได้ มีการเล่าเรียน
+                และงานกลุ่มอีกมากมายที่ข้าพเจ้าต้องรับผิดชอบ อีกทั้งเน็ตหอที่สุดแสนจะกาก
+                จึงขอความกรุณาได้โปรดปล่อยให้ข้าพเจ้าได้แลพวกท่านอย่างเดียวเถิด ขอแสดงความนับถือ มป 🩷
+              </p>
+            </div>
+            <div id="messages">
+            </div>
+          </div>
+          <form class="chat-compose" id="messageForm">
+            <input id="messageInput" type="text" maxlength="280" placeholder="Write a message to Birthday Girl..."
+              aria-label="Write a chat message" autocomplete="off" required>
+            <button class="chat-send" type="submit" aria-label="Send message">➤</button>
+          </form>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:flex-end;margin-top:13px">
+        <button class="button secondary unlock-only" data-go="cake">
+          ไปเป่าเทียนกัน
+          <span>
+            →
+          </span>
+        </button>
+      </div>
+    </section>
+    <section id="cake" class="view">
+      <div class="cake-layout">
+        <div class="card cake-stage">
+          <div class="cake-scene">
+            <div class="candles" id="candles">
+            </div>
+            <div class="cake-top">
+            </div>
+            <div class="cake-body">
+            </div>
+            <div class="plate">
+            </div>
+          </div>
+        </div>
+        <div class="card cake-copy">
+          <div class="eyebrow">
+            FINAL QUEST &nbsp; / &nbsp; MAKE A WISH
+          </div>
+          <h2>
+            ภารกิจสุดท้าย: เป่าเทียน!
+          </h2>
+          <p>
+            ตั้งจิตขอพร แล้วกดเริ่มภารกิจ เทียนจะดับเมื่อหมดเวลาที่เลือกไว้
+          </p>
+          <div class="wish-status" id="wishStatus">
+            <strong>
+              พร้อมลงสนามหรือยัง?
+            </strong>
+            <br>
+            เตรียมคำขอให้พร้อม แล้วเริ่มได้เลย
+          </div>
+          <div class="duration-label">
+            <span>
+              เวลาอธิษฐาน
+            </span>
+            <b id="durationValue">
+              8 วินาที
+            </b>
+          </div>
+          <input id="duration" class="range" type="range" min="5" max="20" value="8" aria-label="เวลาอธิษฐานเป็นวินาที">
+          <button id="wishButton" class="button">
+            ▶ &nbsp; เริ่มอธิษฐาน
+          </button>
+          <p class="tiny">
+            เทียนจะดับอัตโนมัติเมื่อเวลาภารกิจหมดลง
+          </p>
+          <button class="button secondary" data-go="gift" hidden>
+            🎁 &nbsp; ไปหน้า Reward
+          </button>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:flex-start;margin-top:13px">
+        <button class="button secondary" data-go="countdown">
+          ← กลับหน้าเมนู
+        </button>
+      </div>
+    </section>
+    <section id="gift" class="view" hidden>
+      <div class="gift-layout card">
+        <div class="gift-art">
+          <div class="gift-spark spark-one" aria-hidden="true">+XP</div>
+          <div class="gift-spark spark-two" aria-hidden="true">BONUS</div>
+          <div class="gift-box" id="giftBox" role="button" tabindex="0" aria-label="เปิดกล่องของขวัญ">
+            <div class="gift-lid"><span></span></div>
+            <div class="gift-body"><span></span></div>
+            <div class="gift-bow">♡</div>
+          </div>
+        </div>
+        <div class="gift-copy">
+          <div class="eyebrow">BONUS REWARD &nbsp; / &nbsp; UNLOCKED</div>
+          <h2>เคลียร์ทุกภารกิจแล้ว!<br>รับรางวัลของเธอได้เลย</h2>
+          <p>เปิดกล่องแล้วรับไอเทมทีละชิ้น พร้อมคำอธิบายพิเศษ 🎁</p>
+          <div class="gift-item" id="giftItem" aria-live="polite" hidden>
+            <div class="gift-item-icon" id="giftItemIcon" aria-hidden="true"></div>
+            <div class="gift-item-copy">
+              <span class="gift-item-count" id="giftItemCount"></span>
+              <strong id="giftItemTitle"></strong>
+              <span id="giftItemDescription"></span>
+            </div>
+          </div>
+          <div class="gift-message" id="giftMessage" aria-live="polite" hidden>
+            <strong>ยินดีที่ได้รู้จักครับ หวังว่าจะถูกใจของขวัญนะ โธ่เว้ย5555🩷</strong>
+            <span>ขอให้ปีนี้มีแต่ด่านสนุก เพื่อนร่วมทีมที่ดี และชัยชนะที่หนูภูมิใจ</span>
+          </div>
+          <button class="button" id="openGift">🎁 &nbsp; เปิดของขวัญ</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      You make me smile for no reason, Laugh when I least expect. The little things you do each day, Earn all my love
+      and respect.
+    </footer>
+  </main>
+  <div class="toast" id="toast">
+  </div>
+  <script src="script.js" defer>
+  </script>
+</body>
+
+</html>
