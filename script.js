@@ -180,7 +180,7 @@ function tick() {
     const birthdayTitle = $('.count-copy h2');
     if (!birthdayTitle.querySelector('.birthday-title-icon')) {
       birthdayTitle.replaceChildren(
-        document.createTextNode('LEVEL UP 22 !!! HAPPY BIRTHDAY! '),
+        document.createTextNode('LEVEL UP 21 !!! HAPPY BIRTHDAY! '),
       );
 
       const birthdayIcon = document.createElement('img');
@@ -263,7 +263,7 @@ const wishes = [
   [
     '🦊',
     'giji',
-    'สุขสันต์วันเกิดนะครับ น้องมะปราง ขอให้ไม่เจ็บป่วย นอนหลับเพียงพอ เป็นปีที่อายุ22 ที่มีแต่เรื่องดีๆและน่าจดจำครับ 💚🎮',
+    'สุขสันต์วันเกิดนะครับ น้องมะปราง ขอให้ไม่เจ็บป่วย นอนหลับเพียงพอ เป็นปีที่อายุ21 ที่มีแต่เรื่องดีๆและน่าจดจำครับ 💚🎮',
   ],
 ];
 
@@ -336,7 +336,7 @@ $('#messageForm').addEventListener('submit', (event) => {
 // Cake candles and wish timer
 const candleRoot = $('#candles');
 
-for (const digit of ['2', '2']) {
+for (const digit of ['2', '1']) {
   const candle = document.createElement('div');
   candle.className = 'candle candle-number';
   candle.innerHTML = `<span class="candle-digit">${digit}</span><i class="wick"></i><i class="flame"></i>`;
